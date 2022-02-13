@@ -1,0 +1,22 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app/server/server.js",
+    "dev": "kill -9 $(lsof -ti:7000) && nodemon app/server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "date-format": "^3.0.0",
+    "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "socket.io": "^4.4.0"
+  }
+}
